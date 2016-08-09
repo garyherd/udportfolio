@@ -6,18 +6,9 @@ module.exports = function(grunt) {
 
   // Grunt configuration
   grunt.initConfig({
-      imagemin: {
-          options: {
-              use: [mozjpeg()]
-          },
-          files: {
-              'views/images/pizzeria.jpg': 'src/views/images/pizzeria.jpg',
-              'img/profilepic.jpg': 'src/img/profilepic.jpg'
-          }
-      }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('');
 
   // Register default tasks
   grunt.registerTask('default', ['imagemin']);
